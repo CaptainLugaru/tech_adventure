@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "terainium_throwing_knife",
+    "customModelName": "Normal",
+    "name": "Terainium Throwing Knife",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Techadventuretab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:TerainiumThrowingKnifeitem"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 3.9999999999999996,
+    "onRangedItemUsed": {
+      "name": "TerainiumThrowingKnifeitemRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:TerainiumThrowingKnifeitem"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "TerainiumThrowingKnifeitemBulletHitsLivingEntity"
+    },
+    "onBulletHitsPlayer": {
+      "name": "TerainiumThrowingKnifeitemBulletHitsLivingEntity"
+    },
+    "onBulletHitsEntity": {
+      "name": "TerainiumThrowingKnifeitemBulletHitsLivingEntity"
+    }
+  }
+}

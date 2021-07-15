@@ -1,0 +1,29 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "tech_adventure:terainium"
+    },
+    "1": {
+      "item": "tech_adventure:terainium"
+    },
+    "2": {
+      "item": "tech_adventure:terainium"
+    },
+    "3": {
+      "item": "tech_adventure:terainium"
+    },
+    "5": {
+      "item": "tech_adventure:terainium"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:terainiumhelmet_helmet",
+    "count": 1
+  }
+}

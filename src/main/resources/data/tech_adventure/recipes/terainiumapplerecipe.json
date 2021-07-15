@@ -1,0 +1,42 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "tech_adventure:terainium"
+    },
+    "1": {
+      "item": "tech_adventure:terainium"
+    },
+    "2": {
+      "item": "tech_adventure:terainium"
+    },
+    "3": {
+      "item": "tech_adventure:terainium"
+    },
+    "4": {
+      "item": "minecraft:apple"
+    },
+    "5": {
+      "item": "tech_adventure:terainium"
+    },
+    "6": {
+      "item": "tech_adventure:terainium"
+    },
+    "7": {
+      "item": "tech_adventure:terainium"
+    },
+    "8": {
+      "item": "tech_adventure:terainium"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:terainiumapple",
+    "count": 1
+  }
+}

@@ -1,0 +1,956 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Terainium",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium"
+    },
+    {
+      "name": "TerainiumBlock",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium_block"
+    },
+    {
+      "name": "Terainiumblockrecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumblockrecipe"
+    },
+    {
+      "name": "Terainiumrecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumrecipe"
+    },
+    {
+      "name": "Terainiumore",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumore"
+    },
+    {
+      "name": "Smeltterainiumore",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smeltterainiumore"
+    },
+    {
+      "name": "TerainiumSword",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium_sword"
+    },
+    {
+      "name": "Terainiumpickaxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumpickaxe"
+    },
+    {
+      "name": "Terainiumaxe",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumaxe"
+    },
+    {
+      "name": "Terainiumhoe",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumhoe"
+    },
+    {
+      "name": "Terainiumshovel",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumshovel"
+    },
+    {
+      "name": "Terainiumhelmet",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumhelmet",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Terainiumswordrecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumswordrecipe"
+    },
+    {
+      "name": "Terainiumaxerecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumaxerecipe"
+    },
+    {
+      "name": "Terainiumpickaxerecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumpickaxerecipe"
+    },
+    {
+      "name": "Terainiumhoerecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumhoerecipe"
+    },
+    {
+      "name": "Terainiumshovelrecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumshovelrecipe"
+    },
+    {
+      "name": "Terainiumhelmetrecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumhelmetrecipe"
+    },
+    {
+      "name": "TerainiumChestplateRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium_chestplate_recipe"
+    },
+    {
+      "name": "Terainiumleggingsrecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumleggingsrecipe"
+    },
+    {
+      "name": "Terainiumbootsrecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumbootsrecipe"
+    },
+    {
+      "name": "Glowingdirt",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glowingdirt"
+    },
+    {
+      "name": "Undergroundglowingdirt",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undergroundglowingdirt"
+    },
+    {
+      "name": "HopelessOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hopeless_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hopeless",
+      "type": "potion",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hopeless"
+    },
+    {
+      "name": "Totemofresistance",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "totemofresistance"
+    },
+    {
+      "name": "Potionofresistance",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potionofresistance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Backpackgui",
+      "type": "gui",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpackgui"
+    },
+    {
+      "name": "Backpack",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpack"
+    },
+    {
+      "name": "Backpackrecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpackrecipe"
+    },
+    {
+      "name": "Wither",
+      "type": "enchantment",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wither"
+    },
+    {
+      "name": "Witherprocedure",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "witherprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Techadventuretab",
+      "type": "tab",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "techadventuretab"
+    },
+    {
+      "name": "Glowingwood",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glowingwood"
+    },
+    {
+      "name": "Emrealdarmor",
+      "type": "armor",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emrealdarmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Emerealdhelmetrecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerealdhelmetrecipe"
+    },
+    {
+      "name": "Emerealedchestplaterecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerealedchestplaterecipe"
+    },
+    {
+      "name": "Emerealdleggingsrecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerealdleggingsrecipe"
+    },
+    {
+      "name": "Emerealdbootsrecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerealdbootsrecipe"
+    },
+    {
+      "name": "Emerealdsword",
+      "type": "tool",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerealdsword"
+    },
+    {
+      "name": "Emeraldpickaxe",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldpickaxe"
+    },
+    {
+      "name": "Emeraldaxe",
+      "type": "tool",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldaxe"
+    },
+    {
+      "name": "Emeraldhoe",
+      "type": "tool",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldhoe"
+    },
+    {
+      "name": "Emeraldshovel",
+      "type": "tool",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldshovel"
+    },
+    {
+      "name": "Emeraldswordrecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldswordrecipe"
+    },
+    {
+      "name": "Emeraldpickaxerecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldpickaxerecipe"
+    },
+    {
+      "name": "Emeraldaxerecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldaxerecipe"
+    },
+    {
+      "name": "Emeraldhoerecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldhoerecipe"
+    },
+    {
+      "name": "Emeraldshovelrecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldshovelrecipe"
+    },
+    {
+      "name": "Lifesteal",
+      "type": "enchantment",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lifesteal"
+    },
+    {
+      "name": "Lifestealprocedure",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lifestealprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DynimiteitemRangedItemUsed",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dynimiteitem_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DynimiteitemBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dynimiteitem_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dynimiteitem",
+      "type": "gun",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dynimiteitem"
+    },
+    {
+      "name": "Dynimite",
+      "type": "item",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dynimite"
+    },
+    {
+      "name": "Packsackgui",
+      "type": "gui",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "packsackgui"
+    },
+    {
+      "name": "Packsack",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "packsack"
+    },
+    {
+      "name": "Packsackrecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "packsackrecipe"
+    },
+    {
+      "name": "Dynimiterecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dynimiterecipe"
+    },
+    {
+      "name": "Terainiumthrowingknife",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumthrowingknife"
+    },
+    {
+      "name": "TerainiumThrowingKnifeitem",
+      "type": "gun",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium_throwing_knifeitem"
+    },
+    {
+      "name": "TerainiumThrowingKnifeitemRangedItemUsed",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium_throwing_knifeitem_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DynimiteitemRangedItemUsed2",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dynimiteitem_ranged_item_used_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerainiumThrowingKnifeitemBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainium_throwing_knifeitem_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerainiumappleFoodEaten",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumapple_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Terainiumapple",
+      "type": "food",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumapple"
+    },
+    {
+      "name": "Terainiumapplerecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumapplerecipe"
+    },
+    {
+      "name": "Totemofrisitancerecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "totemofrisitancerecipe"
+    },
+    {
+      "name": "Terainiumthrowingkniferecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terainiumthrowingkniferecipe"
+    },
+    {
+      "name": "Whatisthat",
+      "type": "achievement",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whatisthat"
+    },
+    {
+      "name": "Tntcore",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntcore"
+    },
+    {
+      "name": "Tntcorerecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntcorerecipe"
+    },
+    {
+      "name": "Tntpack",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntpack"
+    },
+    {
+      "name": "Tntpackrecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntpackrecipe"
+    },
+    {
+      "name": "Emeraldarmoreffect",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldarmoreffect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirstModLootTable",
+      "type": "loottable",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "first_mod_loot_table"
+    },
+    {
+      "name": "Goldforgeprocedure",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldforgeprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goldforgegui",
+      "type": "gui",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldforgegui"
+    },
+    {
+      "name": "Goldforge",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldforge"
+    },
+    {
+      "name": "Floatingblacksmithstructure",
+      "type": "structure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "floatingblacksmithstructure"
+    },
+    {
+      "name": "Secondmodloottable",
+      "type": "loottable",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "secondmodloottable"
+    },
+    {
+      "name": "Obsidiantowerofmadness",
+      "type": "structure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obsidiantowerofmadness"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.tech_adventure.terainiumhoe": "Terainium hoe",
+      "item.tech_adventure.packsack": "Pack sack",
+      "item.tech_adventure.tntcore": "Tntcore",
+      "item.tech_adventure.terainium": "Terainium",
+      "item.tech_adventure.terainiumapple": "Terainium apple",
+      "item.tech_adventure.backpack": "Backpack",
+      "item.minecraft.potion.effect.hopeless": "Hopeless",
+      "enchantment.tech_adventure.lifesteal": "Lifesteal",
+      "item.tech_adventure.totemofresistance": "Totem of resistance",
+      "item.minecraft.splash_potion.effect.hopeless": "Splash Hopeless",
+      "item.tech_adventure.terainiumshovel": "Terainium shovel",
+      "item.tech_adventure.emrealdarmor_boots": "Emreald Boots",
+      "item.tech_adventure.terainiumaxe": "Terainium axe",
+      "item.tech_adventure.tntpack": "Tntpack",
+      "block.tech_adventure.goldforge": "Gold forge",
+      "item.tech_adventure.terainium_throwing_knifeitem": "Terainium Throwing Knife",
+      "block.tech_adventure.glowingdirt": "Glowing dirt",
+      "item.tech_adventure.terainiumpickaxe": "Terainium pickaxe",
+      "item.minecraft.lingering_potion.effect.hopeless": "Lingering Hopeless",
+      "item.minecraft.tipped_arrow.effect.hopeless": "Arrow of Hopeless",
+      "item.tech_adventure.emrealdarmor_chestplate": "Emreald Body",
+      "block.tech_adventure.undergroundglowingdirt": "Underground glowing dirt",
+      "block.tech_adventure.terainiumore": "Terainium ore",
+      "item.tech_adventure.terainiumthrowingknife": "Terainiumthrowingknife",
+      "advancements.whatisthat.title": "What is that?",
+      "item.tech_adventure.emeraldaxe": "Emerald axe",
+      "item.tech_adventure.dynimite": "Dynimite_item",
+      "item.tech_adventure.emrealdarmor_leggings": "Emreald Leggings",
+      "advancements.whatisthat.descr": "the item you got looks mysterous",
+      "item.tech_adventure.dynimiteitem": "Dynimite",
+      "item.tech_adventure.emeraldpickaxe": "Emerald pickaxe",
+      "item.tech_adventure.emeraldhoe": "Emerald hoe",
+      "item.tech_adventure.terainiumhelmet_leggings": "Terainium Leggings",
+      "item.tech_adventure.emrealdarmor_helmet": "Emreald  Helmet",
+      "item.tech_adventure.terainiumhelmet_helmet": "Terainium Helmet",
+      "item.tech_adventure.terainiumhelmet_chestplate": "Terainium Body",
+      "block.tech_adventure.glowingwood": "Glowing wood",
+      "item.tech_adventure.terainium_sword": "Terainium Sword",
+      "block.tech_adventure.terainium_block": "Terainium Block",
+      "item.tech_adventure.emerealdsword": "Emereald sword",
+      "item.tech_adventure.terainiumhelmet_boots": "Terainium Boots",
+      "item.tech_adventure.emeraldshovel": "Emerald shovel",
+      "itemGroup.tabtechadventuretab": "Techadventuretab",
+      "enchantment.tech_adventure.wither": "Wither",
+      "effect.hopeless": "Hopeless_ness"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tech_adventure",
+    "modName": "tech adventure",
+    "version": "1.0.0",
+    "author": "anton, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.techadventure",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tech_adventure:blocks/glowing_logtop_wood",
+    "up": "tech_adventure:blocks/glowing_logtop_wood",
+    "north": "tech_adventure:blocks/glowing_wood_tree",
+    "east": "tech_adventure:blocks/glowing_wood_tree",
+    "south": "tech_adventure:blocks/glowing_wood_tree",
+    "west": "tech_adventure:blocks/glowing_wood_tree",
+    "particle": "tech_adventure:blocks/glowing_logtop_wood"
+  }
+}

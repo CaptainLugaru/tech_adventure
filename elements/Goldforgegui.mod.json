@@ -1,0 +1,84 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 140,
+          "y": 69
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 258,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "fuse",
+          "onClick": {
+            "name": "Goldforgeprocedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "fuse",
+          "x": 245,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "gold forge",
+          "color": {
+            "value": -6711040,
+            "falpha": 0.0
+          },
+          "name": "gold forge",
+          "x": 181,
+          "y": 43
+        }
+      }
+    ]
+  }
+}

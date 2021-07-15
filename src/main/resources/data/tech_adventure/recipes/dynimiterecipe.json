@@ -1,0 +1,42 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "tech_adventure:tntpack"
+    },
+    "1": {
+      "item": "minecraft:redstone"
+    },
+    "2": {
+      "item": "tech_adventure:tntpack"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    },
+    "4": {
+      "item": "tech_adventure:tntcore"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "6": {
+      "item": "tech_adventure:tntpack"
+    },
+    "7": {
+      "item": "minecraft:redstone"
+    },
+    "8": {
+      "item": "tech_adventure:tntpack"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:dynimiteitem",
+    "count": 1
+  }
+}

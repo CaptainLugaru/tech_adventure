@@ -1,0 +1,16 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "tech_adventure:terainium_block"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:terainium",
+    "count": 9
+  }
+}

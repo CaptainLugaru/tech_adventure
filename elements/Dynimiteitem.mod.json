@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "dynimite",
+    "customModelName": "Normal",
+    "name": "Dynimite",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Techadventuretab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Dynimiteitem"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.tnt.primed"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "DynimiteitemRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Dynimiteitem"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DynimiteitemBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "DynimiteitemBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "DynimiteitemBulletHitsBlock"
+    }
+  }
+}
