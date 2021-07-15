@@ -106,8 +106,8 @@ public class TerainiumoreBlock extends TechAdventureModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(30)
-					.square().func_242731_b(7);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 4)).range(30)
+					.square().func_242731_b(4);
 			event.getRegistry().register(feature.setRegistryName("terainiumore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tech_adventure:terainiumore"), configuredFeature);
 		}
