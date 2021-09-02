@@ -70,11 +70,8 @@ local.properties
 ### Project specific content
 # Cpt.Lugaru September 1st 2021
 # Using rewrap
-gradle/
 .gradle/
 build/
 .settings/
 .mcreator/
 run/
-!gradle/wrapper/gradle-wrapper.properties
-!gradle/wrapper/gradle-wrapper.jar
