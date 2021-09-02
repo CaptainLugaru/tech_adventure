@@ -70,9 +70,6 @@ local.properties
 ### Project specific content
 # Cpt.Lugaru September 1st 2021
 # Using rewrap
-gradle/
-gradlew
-gradlew.bat
 .gradle/
 build/
 .settings/
