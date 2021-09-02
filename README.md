@@ -9,6 +9,8 @@ Munchkin Playlist of the Hacker Tales YouTube Channel _Tech Adventure_ Minecraft
 This repository is an experimental playgrond. It exists to learn, explore and have fun!!!
 An adventure is technology, that's all it is.
 
+__Ideas cooked up here will go clean into the *Munchcraft Mod*!__
+
 > Please see our [Security Disclaimer](SECURITY.md)!
 
 ## Friends Welcome!
