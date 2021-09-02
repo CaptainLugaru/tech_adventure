@@ -1,14 +1,14 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "tnt_core",
     "customModelName": "Normal",
-    "name": "Tntcore",
+    "name": "Tnt Core",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -28,6 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "hasDispenseBehavior": false
   }
 }

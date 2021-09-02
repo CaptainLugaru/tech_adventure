@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Terainium"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "CUSTOM:Terainium"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Terainium"
+      },
+      {
+        "value": "Items.STRING"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Terainiumbow"
+    },
+    "name": "terainiumbowrecipe",
+    "namespace": "mod"
+  }
+}

@@ -18,6 +18,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
@@ -64,11 +65,16 @@ public class TerainiumoreBlock extends TechAdventureModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(TerainiumItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(TerainiumItem.block));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -79,7 +85,7 @@ public class TerainiumoreBlock extends TechAdventureModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE)
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -101,13 +107,15 @@ public class TerainiumoreBlock extends TechAdventureModElements.ModElement {
 					boolean dimensionCriteria = false;
 					if (dimensionType == World.OVERWORLD)
 						dimensionCriteria = true;
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("tech_adventure:shadowdemension")))
+						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(30)
-					.square().func_242731_b(7);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 4)).range(30)
+					.square().func_242731_b(4);
 			event.getRegistry().register(feature.setRegistryName("terainiumore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tech_adventure:terainiumore"), configuredFeature);
 		}

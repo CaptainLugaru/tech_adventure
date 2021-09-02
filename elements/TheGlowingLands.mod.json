@@ -1,0 +1,146 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "The Glowing Lands",
+    "groundBlock": {
+      "value": "CUSTOM:Glowingdirt"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Undergroundglowingdirt"
+    },
+    "airColor": {
+      "value": -14156032,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16776449,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -4690689,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -3800833,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -5898028,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "entity.skeleton.ambient"
+    },
+    "additionsSound": {
+      "value": "record.13"
+    },
+    "music": {
+      "value": "record.11"
+    },
+    "moodSound": {
+      "value": "music.nether.soul_sand_valley"
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "SMOKE_LARGE"
+    },
+    "particlesProbability": 10.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.7999999999999999,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 5,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 6,
+    "seagrassPerChunk": 1,
+    "flowersPerChunk": 1,
+    "mushroomsPerChunk": 2,
+    "bigMushroomsChunk": 2,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 12,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 7,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:Glowingwood"
+    },
+    "treeBranch": {
+      "value": "Blocks.LEAVES#0"
+    },
+    "treeVines": {
+      "value": "Blocks.WEEPING_VINES_PLANT"
+    },
+    "treeFruits": {
+      "value": "Blocks.WITHER_ROSE"
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "ExtraEmeraldOre",
+      "Fossils",
+      "InfestedStone"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityAnimal"
+        },
+        "minGroup": 6,
+        "maxGroup": 8,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityMob"
+        },
+        "minGroup": 9,
+        "maxGroup": 18,
+        "weight": 50,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityWaterMob"
+        },
+        "minGroup": 3,
+        "maxGroup": 6,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityFlying"
+        },
+        "minGroup": 6,
+        "maxGroup": 10,
+        "weight": 15,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

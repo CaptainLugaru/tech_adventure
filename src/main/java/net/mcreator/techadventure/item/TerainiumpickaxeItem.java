@@ -44,7 +44,7 @@ public class TerainiumpickaxeItem extends TechAdventureModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(TerainiumItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(TerainiumItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(TechadventuretabItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("terainiumpickaxe"));

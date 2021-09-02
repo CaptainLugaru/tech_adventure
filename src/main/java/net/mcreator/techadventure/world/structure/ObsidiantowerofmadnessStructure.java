@@ -1,11 +1,10 @@
 
 package net.mcreator.techadventure.world.structure;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.IPlacementConfig;
@@ -31,22 +30,16 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.techadventure.TechAdventureModElements;
-
 import java.util.Random;
 
-@TechAdventureModElements.ModElement.Tag
-public class ObsidiantowerofmadnessStructure extends TechAdventureModElements.ModElement {
+@Mod.EventBusSubscriber
+public class ObsidiantowerofmadnessStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public ObsidiantowerofmadnessStructure(TechAdventureModElements instance) {
-		super(instance, 79);
-		MinecraftForge.EVENT_BUS.register(this);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
-	}
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
-		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
+		public static void registerFeature(RegistryEvent.Register<Feature<?>> event) {
 			feature = new Feature<NoFeatureConfig>(NoFeatureConfig.field_236558_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, NoFeatureConfig config) {
@@ -67,7 +60,7 @@ public class ObsidiantowerofmadnessStructure extends TechAdventureModElements.Mo
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == Blocks.GRASS_BLOCK.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.GRASS_BLOCK)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
@@ -98,7 +91,7 @@ public class ObsidiantowerofmadnessStructure extends TechAdventureModElements.Mo
 		}
 	}
 	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
 	}
 }

@@ -4,12 +4,12 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '4.1.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
-//FixMe: by hand
+
 version = '1.0'
 group = 'com.yourname.modid'
 archivesBaseName = 'modid'
@@ -49,7 +49,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.0'
 }
 
 apply from: 'mcreator.gradle'

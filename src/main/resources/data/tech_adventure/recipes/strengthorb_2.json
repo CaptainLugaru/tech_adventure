@@ -1,0 +1,42 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:red_dye"
+    },
+    "1": {
+      "item": "minecraft:experience_bottle"
+    },
+    "2": {
+      "item": "minecraft:red_dye"
+    },
+    "3": {
+      "item": "minecraft:experience_bottle"
+    },
+    "4": {
+      "item": "minecraft:end_crystal"
+    },
+    "5": {
+      "item": "minecraft:experience_bottle"
+    },
+    "6": {
+      "item": "minecraft:red_dye"
+    },
+    "7": {
+      "item": "minecraft:experience_bottle"
+    },
+    "8": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:strengthorb",
+    "count": 1
+  }
+}

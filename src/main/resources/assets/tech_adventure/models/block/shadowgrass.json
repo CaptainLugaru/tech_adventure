@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "tech_adventure:blocks/shadow_block_bottem",
+    "top": "tech_adventure:blocks/shadow_grass_top",
+    "side": "tech_adventure:blocks/shadow_grass_side",
+    "overlay": "tech_adventure:blocks/shadow_grass_side",
+    "particle": "tech_adventure:blocks/shadow_block_bottem"
+  }
+}

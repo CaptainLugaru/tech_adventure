@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "turainium_ore",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Terainium ore",
+    "name": "Terainium Ore",
     "specialInfo": [],
     "hardness": 7.0,
     "resistance": 12.0,
@@ -49,14 +49,15 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -71,6 +72,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "STONE"
     },
@@ -102,7 +104,8 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:Shadowdemension"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -110,8 +113,8 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 7,
-    "frequencyOnChunk": 5,
+    "frequencyPerChunks": 4,
+    "frequencyOnChunk": 4,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 30
   }

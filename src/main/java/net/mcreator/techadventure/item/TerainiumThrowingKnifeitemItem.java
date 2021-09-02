@@ -32,7 +32,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.techadventure.procedures.TerainiumThrowingKnifeitemRangedItemUsedProcedure;
 import net.mcreator.techadventure.procedures.TerainiumThrowingKnifeitemBulletHitsLivingEntityProcedure;
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
+import net.mcreator.techadventure.itemgroup.AbilitytabItemGroup;
 import net.mcreator.techadventure.entity.renderer.TerainiumThrowingKnifeitemRenderer;
 import net.mcreator.techadventure.TechAdventureModElements;
 
@@ -59,7 +59,7 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(TechadventuretabItemGroup.tab).maxStackSize(1));
+			super(new Item.Properties().group(AbilitytabItemGroup.tab).maxStackSize(1));
 			setRegistryName("terainium_throwing_knifeitem");
 		}
 
@@ -87,13 +87,11 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ItemStack stack = ShootableItem.getHeldAmmo(entity,
-							e -> e.getItem() == new ItemStack(TerainiumThrowingKnifeitemItem.block, (int) (1)).getItem());
+					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == TerainiumThrowingKnifeitemItem.block);
 					if (stack == ItemStack.EMPTY) {
 						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
 							ItemStack teststack = entity.inventory.mainInventory.get(i);
-							if (teststack != null
-									&& teststack.getItem() == new ItemStack(TerainiumThrowingKnifeitemItem.block, (int) (1)).getItem()) {
+							if (teststack != null && teststack.getItem() == TerainiumThrowingKnifeitemItem.block) {
 								stack = teststack;
 								break;
 							}
@@ -105,7 +103,7 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 						if (entity.abilities.isCreativeMode) {
 							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 						} else {
-							if (new ItemStack(TerainiumThrowingKnifeitemItem.block, (int) (1)).isDamageable()) {
+							if (new ItemStack(TerainiumThrowingKnifeitemItem.block).isDamageable()) {
 								if (stack.attemptDamageItem(1, random, entity)) {
 									stack.shrink(1);
 									stack.setDamage(0);
@@ -155,12 +153,12 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(TerainiumThrowingKnifeitemItem.block, (int) (1));
+			return new ItemStack(TerainiumThrowingKnifeitemItem.block);
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(TerainiumThrowingKnifeitemItem.block, (int) (1));
+			return new ItemStack(TerainiumThrowingKnifeitemItem.block);
 		}
 
 		@Override
@@ -171,6 +169,7 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -190,6 +189,7 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -208,6 +208,7 @@ public class TerainiumThrowingKnifeitemItem extends TechAdventureModElements.Mod
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

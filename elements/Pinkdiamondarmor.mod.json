@@ -1,0 +1,62 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "pink_diamond_helment",
+    "enableBody": true,
+    "textureBody": "pink_diamond_chestpalte",
+    "enableLeggings": true,
+    "textureLeggings": "pink_diamond_legginigs",
+    "enableBoots": true,
+    "textureBoots": "pink_diamond_boots",
+    "creativeTab": {
+      "value": "CUSTOM:Magictools"
+    },
+    "armorTextureFile": "pink_diamond_armor_",
+    "helmetName": "Pink Diamond Armor Helmet",
+    "bodyName": "Pink Diamond Armor Body",
+    "leggingsName": "Pink Diamond Armor Leggings",
+    "bootsName": "Pink Diamond Armor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 40,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 12,
+    "toughness": 2.5,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:PinkDiamond"
+      }
+    ]
+  }
+}

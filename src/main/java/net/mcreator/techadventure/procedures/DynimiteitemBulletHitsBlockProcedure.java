@@ -4,17 +4,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
 
-import net.mcreator.techadventure.TechAdventureModElements;
 import net.mcreator.techadventure.TechAdventureMod;
 
 import java.util.Map;
 
-@TechAdventureModElements.ModElement.Tag
-public class DynimiteitemBulletHitsBlockProcedure extends TechAdventureModElements.ModElement {
-	public DynimiteitemBulletHitsBlockProcedure(TechAdventureModElements instance) {
-		super(instance, 53);
-	}
-
+public class DynimiteitemBulletHitsBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

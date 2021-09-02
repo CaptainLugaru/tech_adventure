@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "terainium_bow",
+    "customModelName": "Normal",
+    "name": "Terainium Bow",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Abilitytab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Ironarrow"
+    },
+    "shootConstantly": false,
+    "usageCount": 500,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "TerainiumbowRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 8.0,
+    "bulletKnockback": 3,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Ironarrow"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "TerainiumbowBulletHitsPlayer"
+    },
+    "onBulletHitsPlayer": {
+      "name": "TerainiumbowBulletHitsPlayer"
+    },
+    "onBulletHitsEntity": {
+      "name": "TerainiumbowBulletHitsPlayer"
+    }
+  }
+}

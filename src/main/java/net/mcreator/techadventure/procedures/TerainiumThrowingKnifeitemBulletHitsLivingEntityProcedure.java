@@ -6,17 +6,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 
 import net.mcreator.techadventure.item.TerainiumThrowingKnifeitemItem;
-import net.mcreator.techadventure.TechAdventureModElements;
 import net.mcreator.techadventure.TechAdventureMod;
 
 import java.util.Map;
 
-@TechAdventureModElements.ModElement.Tag
-public class TerainiumThrowingKnifeitemBulletHitsLivingEntityProcedure extends TechAdventureModElements.ModElement {
-	public TerainiumThrowingKnifeitemBulletHitsLivingEntityProcedure(TechAdventureModElements instance) {
-		super(instance, 62);
-	}
-
+public class TerainiumThrowingKnifeitemBulletHitsLivingEntityProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -43,7 +37,7 @@ public class TerainiumThrowingKnifeitemBulletHitsLivingEntityProcedure extends T
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(TerainiumThrowingKnifeitemItem.block, (int) (1)));
+			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(TerainiumThrowingKnifeitemItem.block));
 			entityToSpawn.setPickupDelay((int) 10);
 			entityToSpawn.setNoDespawn();
 			world.addEntity(entityToSpawn);

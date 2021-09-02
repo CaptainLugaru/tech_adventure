@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "alien_mushroom1",
+    "customModelName": "Normal",
+    "name": "Alien Mushroom food",
+    "rarity": "EPIC",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Abilitytab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 6,
+    "saturation": 0.6,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "AlienMushroomfoodFoodEaten"
+    }
+  }
+}

@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
 import net.mcreator.techadventure.TechAdventureModElements;
 
 @TechAdventureModElements.ModElement.Tag
@@ -25,7 +24,7 @@ public class TntpackItem extends TechAdventureModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(TechadventuretabItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
+			super(new Item.Properties().group(null).maxStackSize(64).rarity(Rarity.RARE));
 			setRegistryName("tntpack");
 		}
 

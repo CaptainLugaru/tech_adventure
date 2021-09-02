@@ -1,0 +1,29 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "1": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "2": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "3": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "5": {
+      "item": "tech_adventure:pink_diamond"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:pinkdiamondarmor_helmet",
+    "count": 1
+  }
+}

@@ -12,7 +12,7 @@ import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.techadventure.procedures.TerainiumappleFoodEatenProcedure;
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
+import net.mcreator.techadventure.itemgroup.AbilitytabItemGroup;
 import net.mcreator.techadventure.TechAdventureModElements;
 
 import java.util.Map;
@@ -32,7 +32,7 @@ public class TerainiumappleItem extends TechAdventureModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(TechadventuretabItemGroup.tab).maxStackSize(64).rarity(Rarity.EPIC)
+			super(new Item.Properties().group(AbilitytabItemGroup.tab).maxStackSize(64).rarity(Rarity.EPIC)
 					.food((new Food.Builder()).hunger(8).saturation(0.5f).setAlwaysEdible().build()));
 			setRegistryName("terainiumapple");
 		}

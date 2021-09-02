@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -8,7 +8,7 @@
     "name": "Backpack",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Abilitytab"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -28,6 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "Backpackgui",
     "inventorySize": 27,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "hasDispenseBehavior": false
   }
 }

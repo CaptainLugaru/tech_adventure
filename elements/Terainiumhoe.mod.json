@@ -1,11 +1,11 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "terainium_hoe",
     "customModelName": "Normal",
-    "name": "Terainium hoe",
+    "name": "Terainium Hoe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Techadventuretab"

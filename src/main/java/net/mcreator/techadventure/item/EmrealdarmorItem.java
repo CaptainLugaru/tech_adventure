@@ -16,7 +16,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
+import net.mcreator.techadventure.itemgroup.EmaraldtabItemGroup;
 import net.mcreator.techadventure.TechAdventureModElements;
 
 @TechAdventureModElements.ModElement.Tag
@@ -43,7 +43,7 @@ public class EmrealdarmorItem extends TechAdventureModElements.ModElement {
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{3, 5, 7, 3}[slot.getIndex()];
+				return new int[]{2, 5, 7, 2}[slot.getIndex()];
 			}
 
 			@Override
@@ -58,7 +58,7 @@ public class EmrealdarmorItem extends TechAdventureModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.EMERALD, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.EMERALD));
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -77,28 +77,28 @@ public class EmrealdarmorItem extends TechAdventureModElements.ModElement {
 				return 0.1f;
 			}
 		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(TechadventuretabItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(EmaraldtabItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "tech_adventure:textures/models/armor/emerald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "tech_adventure:textures/models/armor/emrald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("emrealdarmor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(TechadventuretabItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(EmaraldtabItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "tech_adventure:textures/models/armor/emerald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "tech_adventure:textures/models/armor/emrald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("emrealdarmor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(TechadventuretabItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(EmaraldtabItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "tech_adventure:textures/models/armor/emerald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "tech_adventure:textures/models/armor/emrald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("emrealdarmor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(TechadventuretabItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(EmaraldtabItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "tech_adventure:textures/models/armor/emerald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "tech_adventure:textures/models/armor/emrald_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("emrealdarmor_boots"));
 	}

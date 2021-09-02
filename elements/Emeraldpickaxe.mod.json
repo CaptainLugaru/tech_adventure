@@ -1,14 +1,14 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "emerald_pickaxe",
     "customModelName": "Normal",
-    "name": "Emerald pickaxe",
+    "name": "Emerald Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Emaraldtab"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 3,

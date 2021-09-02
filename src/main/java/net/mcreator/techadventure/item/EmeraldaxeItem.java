@@ -4,11 +4,11 @@ package net.mcreator.techadventure.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.AxeItem;
 
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
+import net.mcreator.techadventure.itemgroup.EmaraldtabItemGroup;
 import net.mcreator.techadventure.TechAdventureModElements;
 
 @TechAdventureModElements.ModElement.Tag
@@ -21,7 +21,7 @@ public class EmeraldaxeItem extends TechAdventureModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
+		elements.items.add(() -> new AxeItem(new IItemTier() {
 			public int getMaxUses() {
 				return 100;
 			}
@@ -45,7 +45,7 @@ public class EmeraldaxeItem extends TechAdventureModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().group(TechadventuretabItemGroup.tab).isImmuneToFire()) {
+		}, 1, -3f, new Item.Properties().group(EmaraldtabItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("emeraldaxe"));
 	}
 }

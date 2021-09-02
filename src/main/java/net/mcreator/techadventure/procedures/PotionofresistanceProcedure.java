@@ -1,8 +1,8 @@
 package net.mcreator.techadventure.procedures;
 
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
@@ -17,19 +17,39 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.techadventure.item.TotemofresistanceItem;
-import net.mcreator.techadventure.TechAdventureModElements;
 import net.mcreator.techadventure.TechAdventureMod;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@TechAdventureModElements.ModElement.Tag
-public class PotionofresistanceProcedure extends TechAdventureModElements.ModElement {
-	public PotionofresistanceProcedure(TechAdventureModElements instance) {
-		super(instance, 26);
-		MinecraftForge.EVENT_BUS.register(this);
+public class PotionofresistanceProcedure {
+	@Mod.EventBusSubscriber
+	private static class GlobalTrigger {
+		@SubscribeEvent
+		public static void onEntityAttacked(LivingAttackEvent event) {
+			if (event != null && event.getEntity() != null) {
+				Entity entity = event.getEntity();
+				Entity sourceentity = event.getSource().getTrueSource();
+				Entity imediatesourceentity = event.getSource().getImmediateSource();
+				double i = entity.getPosX();
+				double j = entity.getPosY();
+				double k = entity.getPosZ();
+				double amount = event.getAmount();
+				World world = entity.world;
+				Map<String, Object> dependencies = new HashMap<>();
+				dependencies.put("x", i);
+				dependencies.put("y", j);
+				dependencies.put("z", k);
+				dependencies.put("amount", amount);
+				dependencies.put("world", world);
+				dependencies.put("entity", entity);
+				dependencies.put("sourceentity", sourceentity);
+				dependencies.put("imediatesourceentity", imediatesourceentity);
+				dependencies.put("event", event);
+				executeProcedure(dependencies);
+			}
+		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -44,12 +64,12 @@ public class PotionofresistanceProcedure extends TechAdventureModElements.ModEle
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(TotemofresistanceItem.block, (int) (1)).getItem())) {
+				.getItem() == TotemofresistanceItem.block)) {
 			if (world.isRemote()) {
-				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TotemofresistanceItem.block, (int) (1)));
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TotemofresistanceItem.block));
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Blocks.VOID_AIR, (int) (1));
+				ItemStack _setstack = new ItemStack(Blocks.VOID_AIR);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
@@ -58,12 +78,12 @@ public class PotionofresistanceProcedure extends TechAdventureModElements.ModEle
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 400, (int) 2, (false), (false)));
 		} else if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
-				.getItem() == new ItemStack(TotemofresistanceItem.block, (int) (1)).getItem())) {
+				.getItem() == TotemofresistanceItem.block)) {
 			if (world.isRemote()) {
-				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TotemofresistanceItem.block, (int) (1)));
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(TotemofresistanceItem.block));
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Blocks.VOID_AIR, (int) (1));
+				ItemStack _setstack = new ItemStack(Blocks.VOID_AIR);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
@@ -71,31 +91,6 @@ public class PotionofresistanceProcedure extends TechAdventureModElements.ModEle
 			}
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 400, (int) 2, (false), (false)));
-		}
-	}
-
-	@SubscribeEvent
-	public void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			Entity sourceentity = event.getSource().getTrueSource();
-			Entity imediatesourceentity = event.getSource().getImmediateSource();
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
-			double amount = event.getAmount();
-			World world = entity.world;
-			Map<String, Object> dependencies = new HashMap<>();
-			dependencies.put("x", i);
-			dependencies.put("y", j);
-			dependencies.put("z", k);
-			dependencies.put("amount", amount);
-			dependencies.put("world", world);
-			dependencies.put("entity", entity);
-			dependencies.put("sourceentity", sourceentity);
-			dependencies.put("imediatesourceentity", imediatesourceentity);
-			dependencies.put("event", event);
-			this.executeProcedure(dependencies);
 		}
 	}
 }

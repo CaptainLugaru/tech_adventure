@@ -35,7 +35,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
+import net.mcreator.techadventure.itemgroup.AbilitytabItemGroup;
 import net.mcreator.techadventure.gui.PacksackguiGuiWindow;
 import net.mcreator.techadventure.gui.PacksackguiGui;
 import net.mcreator.techadventure.TechAdventureModElements;
@@ -70,7 +70,7 @@ public class PacksackItem extends TechAdventureModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(TechadventuretabItemGroup.tab).maxStackSize(1).rarity(Rarity.UNCOMMON));
+			super(new Item.Properties().group(AbilitytabItemGroup.tab).maxStackSize(1).rarity(Rarity.UNCOMMON));
 			setRegistryName("packsack");
 		}
 
@@ -100,7 +100,7 @@ public class PacksackItem extends TechAdventureModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Pack sack");
+						return new StringTextComponent("Pack Sack");
 					}
 
 					@Override

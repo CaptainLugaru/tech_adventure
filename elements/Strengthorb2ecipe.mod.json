@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:Strengthorb"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Strengthorbtwo"
+    },
+    "name": "strengthorb_2ecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "tech_adventure:blocks/alien_mushroom",
+    "particle": "tech_adventure:blocks/alien_mushroom"
+  }
+}

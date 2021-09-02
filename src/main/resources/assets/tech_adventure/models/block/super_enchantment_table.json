@@ -1,0 +1,8 @@
+{
+  "parent": "tech_adventure:custom/model.super_enchantment_table",
+  "textures": {
+    "all": "tech_adventure:blocks/white",
+    "particle": "tech_adventure:blocks/white",
+    "0": "tech_adventure:blocks/white"
+  }
+}

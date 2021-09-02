@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "tech_adventure:block/shadowdemension_portal_ew"
+    },
+    "axis=x": {
+      "model": "tech_adventure:block/shadowdemension_portal_ns"
+    }
+  }
+}
