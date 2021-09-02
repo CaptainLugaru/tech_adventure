@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.techadventure.item.TotemofresistanceItem;
+import net.mcreator.techadventure.item.TerainiumItem;
 import net.mcreator.techadventure.TechAdventureModElements;
 
 @TechAdventureModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class TechadventuretabItemGroup extends TechAdventureModElements.ModEleme
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(TotemofresistanceItem.block, (int) (1));
+				return new ItemStack(TerainiumItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

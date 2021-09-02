@@ -1,6 +1,6 @@
 {
-  "_fv": 18,
-  "_type": "gun",
+  "_fv": 24,
+  "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "terainium_throwing_knife",
@@ -8,7 +8,7 @@
     "name": "Terainium Throwing Knife",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Abilitytab"
     },
     "stackSize": 1,
     "ammoItem": {

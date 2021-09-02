@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "tech_adventure:blocks/shadow_bloom",
+    "particle": "tech_adventure:blocks/shadow_bloom"
+  }
+}

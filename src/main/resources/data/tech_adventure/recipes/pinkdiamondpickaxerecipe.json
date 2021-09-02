@@ -1,0 +1,30 @@
+{
+  "group": "tech_adventure",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "1": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "2": {
+      "item": "tech_adventure:pink_diamond"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tech_adventure:pinkdiamondpickaxe",
+    "count": 1
+  }
+}

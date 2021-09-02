@@ -1,14 +1,14 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "emreald_sword",
     "customModelName": "Normal",
-    "name": "Emereald sword",
+    "name": "Emereald Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Emaraldtab"
     },
     "toolType": "Sword",
     "harvestLevel": 0,

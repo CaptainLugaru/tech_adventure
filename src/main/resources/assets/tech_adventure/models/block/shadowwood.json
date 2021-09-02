@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tech_adventure:blocks/shadow_log_top",
+    "up": "tech_adventure:blocks/shadow_log_top",
+    "north": "tech_adventure:blocks/shadow_log_side",
+    "east": "tech_adventure:blocks/shadow_log_side",
+    "south": "tech_adventure:blocks/shadow_log_side",
+    "west": "tech_adventure:blocks/shadow_log_side",
+    "particle": "tech_adventure:blocks/shadow_log_top"
+  }
+}

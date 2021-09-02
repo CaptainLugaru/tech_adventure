@@ -57,7 +57,7 @@ public class TerainiumhelmetItem extends TechAdventureModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(TerainiumItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(TerainiumItem.block));
 			}
 
 			@OnlyIn(Dist.CLIENT)

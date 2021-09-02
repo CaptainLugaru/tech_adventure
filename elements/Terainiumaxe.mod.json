@@ -1,11 +1,11 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "terainium_axe",
     "customModelName": "Normal",
-    "name": "Terainium axe",
+    "name": "Terainium Axe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Techadventuretab"

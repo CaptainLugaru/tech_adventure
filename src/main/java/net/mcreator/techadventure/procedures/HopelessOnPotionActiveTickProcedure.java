@@ -4,17 +4,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.techadventure.TechAdventureModElements;
 import net.mcreator.techadventure.TechAdventureMod;
 
 import java.util.Map;
 
-@TechAdventureModElements.ModElement.Tag
-public class HopelessOnPotionActiveTickProcedure extends TechAdventureModElements.ModElement {
-	public HopelessOnPotionActiveTickProcedure(TechAdventureModElements instance) {
-		super(instance, 24);
-	}
-
+public class HopelessOnPotionActiveTickProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

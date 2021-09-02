@@ -50,5 +50,15 @@ public class LifestealEnchantment extends TechAdventureModElements.ModElement {
 		public boolean isAllowedOnBooks() {
 			return true;
 		}
+
+		@Override
+		public boolean canGenerateInLoot() {
+			return true;
+		}
+
+		@Override
+		public boolean canVillagerTrade() {
+			return true;
+		}
 	}
 }

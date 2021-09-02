@@ -5,17 +5,11 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.techadventure.TechAdventureModElements;
 import net.mcreator.techadventure.TechAdventureMod;
 
 import java.util.Map;
 
-@TechAdventureModElements.ModElement.Tag
-public class TerainiumappleFoodEatenProcedure extends TechAdventureModElements.ModElement {
-	public TerainiumappleFoodEatenProcedure(TechAdventureModElements instance) {
-		super(instance, 63);
-	}
-
+public class TerainiumappleFoodEatenProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

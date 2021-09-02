@@ -1,16 +1,16 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "emerald_axe",
     "customModelName": "Normal",
-    "name": "Emerald axe",
+    "name": "Emerald Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Emaraldtab"
     },
-    "toolType": "Pickaxe",
+    "toolType": "Axe",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

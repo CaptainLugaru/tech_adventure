@@ -1,15 +1,15 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "terainium_apple",
     "customModelName": "Normal",
-    "name": "Terainium apple",
+    "name": "Terainium Apple",
     "rarity": "EPIC",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Abilitytab"
     },
     "stackSize": 64,
     "nutritionalValue": 8,

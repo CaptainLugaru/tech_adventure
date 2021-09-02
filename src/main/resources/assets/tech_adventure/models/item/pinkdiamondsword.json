@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "tech_adventure:items/pink_diamond_sword"
+  }
+}

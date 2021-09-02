@@ -1,11 +1,11 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "terainium_throwing_knife",
     "customModelName": "Normal",
-    "name": "Terainiumthrowingknife",
+    "name": "Terainium Throwing Knife",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "No creative tab entry"
@@ -28,6 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "hasDispenseBehavior": false
   }
 }

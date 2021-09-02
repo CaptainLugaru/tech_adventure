@@ -1,11 +1,11 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "terainium_pickaxe",
     "customModelName": "Normal",
-    "name": "Terainium pickaxe",
+    "name": "Terainium Pickaxe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Techadventuretab"

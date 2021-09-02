@@ -1,14 +1,14 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "packed_tnt",
     "customModelName": "Normal",
-    "name": "Tntpack",
+    "name": "Tnt Pack",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -28,6 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "hasDispenseBehavior": false
   }
 }

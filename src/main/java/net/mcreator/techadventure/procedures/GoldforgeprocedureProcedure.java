@@ -8,18 +8,12 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.techadventure.TechAdventureModElements;
 import net.mcreator.techadventure.TechAdventureMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 
-@TechAdventureModElements.ModElement.Tag
-public class GoldforgeprocedureProcedure extends TechAdventureModElements.ModElement {
-	public GoldforgeprocedureProcedure(TechAdventureModElements instance) {
-		super(instance, 75);
-	}
-
+public class GoldforgeprocedureProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -56,7 +50,7 @@ public class GoldforgeprocedureProcedure extends TechAdventureModElements.ModEle
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem()) || ((new Object() {
+		}.getItemStack((int) (0))).getItem() == Items.IRON_INGOT) || ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -70,7 +64,7 @@ public class GoldforgeprocedureProcedure extends TechAdventureModElements.ModEle
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(Items.GOLD_NUGGET, (int) (1)).getItem())))) {
+		}.getItemStack((int) (1))).getItem() == Items.GOLD_NUGGET)))) {
 			if (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					Entity _ent = entity;
@@ -85,7 +79,7 @@ public class GoldforgeprocedureProcedure extends TechAdventureModElements.ModEle
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (0))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem())) {
+			}.getItemStack((int) (0))).getItem() == Items.IRON_INGOT)) {
 				{
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -117,7 +111,7 @@ public class GoldforgeprocedureProcedure extends TechAdventureModElements.ModEle
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(Items.GOLD_INGOT, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.GOLD_INGOT);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 							_current.detectAndSendChanges();

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tech_adventure:blocks/apple_upgrader_machine",
+    "particle": "tech_adventure:blocks/apple_upgrader_machine"
+  }
+}

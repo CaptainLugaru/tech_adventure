@@ -1,6 +1,6 @@
 {
-  "_fv": 18,
-  "_type": "gun",
+  "_fv": 24,
+  "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "dynimite",
@@ -8,7 +8,7 @@
     "name": "Dynimite",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Abilitytab"
     },
     "stackSize": 1,
     "ammoItem": {

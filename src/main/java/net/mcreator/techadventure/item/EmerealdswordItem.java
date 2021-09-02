@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import net.mcreator.techadventure.itemgroup.TechadventuretabItemGroup;
+import net.mcreator.techadventure.itemgroup.EmaraldtabItemGroup;
 import net.mcreator.techadventure.TechAdventureModElements;
 
 @TechAdventureModElements.ModElement.Tag
@@ -45,9 +45,9 @@ public class EmerealdswordItem extends TechAdventureModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.EMERALD, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.EMERALD));
 			}
-		}, 3, -2.5f, new Item.Properties().group(TechadventuretabItemGroup.tab).isImmuneToFire()) {
+		}, 3, -2.5f, new Item.Properties().group(EmaraldtabItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("emerealdsword"));
 	}
 }

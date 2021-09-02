@@ -1,14 +1,14 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "emerald_hoe",
     "customModelName": "Normal",
-    "name": "Emerald hoe",
+    "name": "Emerald Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Techadventuretab"
+      "value": "CUSTOM:Emaraldtab"
     },
     "toolType": "Hoe",
     "harvestLevel": 3,
